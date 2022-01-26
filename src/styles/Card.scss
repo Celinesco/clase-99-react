@@ -20,6 +20,19 @@
     height: 90px;
 }
 
+.space-between {
+    h2 {
+        margin-top: 20px;
+    }
+    span {
+        margin-top: 10px;
+        margin-right: 10px;
+        color: red;
+        border: 1px solid black;
+        padding: 10px;
+    }
+}
+
 .title-type-star {
     position: absolute;
     bottom: 0;
@@ -30,6 +43,13 @@
     width: 200px;
 }
 
+.no-available {
+    h3 {
+        text-decoration:line-through;
+        color: rgb(122, 117, 117);
+    }
+}
+
 .fa-cart-plus {
     font-size: 25px;
 }
@@ -38,4 +58,5 @@
     font-size: 10px;
     color: lightgrey;
 }
+
 

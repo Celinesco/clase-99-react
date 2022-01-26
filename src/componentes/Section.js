@@ -78,7 +78,9 @@ const Section = () => {
                 type={producto.type.toUpperCase()}
                 price={producto.price}
                 rating={producto.rating}
-                img={producto.img}  />)}
+                isAvailable={producto.isAvailable}
+                onSale={producto.onSale}
+                img={producto.img}/>)}
         </section>
     )
 }
