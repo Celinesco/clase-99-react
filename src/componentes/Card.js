@@ -5,7 +5,7 @@ import Star from "./Star"
 
 const Card = ({ title, type, price, rating, isAvailable, onSale, img}) => {
     return (
-        <div className="card-container">
+        <div className={isAvailable ? "card-container" : "card-container no-available"}>
             <img src={img}></img>
             <div className="title-type-star">
                 <div className="space-between">
