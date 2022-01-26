@@ -7,7 +7,7 @@ const products = [
       title: 'Coombes',
       type: "Lounge",
       price: 2600,
-      rating: 4,
+      rating: 2,
       img: 'https://i.imgur.com/ZAxMGG5.png',
       isAvailable: true,
       onSale: false,

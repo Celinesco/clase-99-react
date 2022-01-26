@@ -5,7 +5,7 @@ const SearchBar = () => {
         <div className="search-bar">
             <div className="left-side-search-bar">
             <label>
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
                 <input type= "text" placeholder="living room"></input>
             </label>
             </div>

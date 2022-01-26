@@ -1,4 +1,7 @@
 import "../styles/Card.scss"
+import Star from "./Star"
+
+
 
 const Card = ({ title, type, price, rating, img }) => {
     return (
@@ -8,16 +11,12 @@ const Card = ({ title, type, price, rating, img }) => {
                 <h2>{title}</h2>
                 <h3>{type}</h3>
                 <div className="stars-container">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <Star rating={rating}/>
                 </div>
             </div>
             <div className="price-icon">
                 <p>${price}</p>
-                <button type="button"><i class="fas fa-cart-plus"></i></button>
+                <button type="button"><i className="fas fa-cart-plus"></i></button>
             </div>
 
         </div>
