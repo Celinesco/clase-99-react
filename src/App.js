@@ -11,6 +11,7 @@ const App = () => {
       <Nav />
       <SearchBar />
       <Section />
+      
     </div>
   );
 }

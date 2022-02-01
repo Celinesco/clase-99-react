@@ -1,6 +1,7 @@
 import "../styles/Section.scss"
 import CardFilters from "./CardFilters";
 import Card from "./Card"
+import Modal from "./Modal"
 
 const products = [
     {
@@ -27,7 +28,7 @@ const products = [
       price: 950,
       rating: 5,
       img: 'https://i.imgur.com/Vx1cZY0.png', 
-      isAvailable: false,
+      isAvailable: true,
       onSale: true,
     },
     {
@@ -45,7 +46,7 @@ const products = [
       price: 890,
       rating: 4,
       img: 'https://i.imgur.com/AlKxDE4.jpeg', 
-      isAvailable: true,
+      isAvailable: false,
       onSale: false,
     },
     {
