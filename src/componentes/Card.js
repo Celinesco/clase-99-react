@@ -35,7 +35,6 @@ const Card = ({ title, type, price, rating, isAvailable, onSale, img}) => {
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} 
         className={"card-container " + `${!isAvailable && "no-available"} ${cardHover && isAvailable && "scale-card"}`}>
                 <img onClick={handleClickModal} src={img}></img>
-                {!isAvailable && <p className="title-no-available">No available</p>}
                 <div className="title-type-star">
                     <div className="space-between">
                         <h2>{title}</h2>
