@@ -21,6 +21,12 @@
     padding: 20px;
 }
 
+.otrodivmas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .contenedor-cantidades {
     display: flex;
     margin: 10px;
@@ -40,13 +46,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    right: -435px;
     color: black;
     font-size: 20px;
+    padding: 10px;
     background-color: red;
     width: 20px;
     height: 20px;
     border-radius: 100%;
     cursor:pointer;
+    border: 2px outset white;
 }

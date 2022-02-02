@@ -22,18 +22,19 @@ const Card = ({ title, type, price, rating, isAvailable, onSale, img}) => {
     }
 
     const handleClickModal = () => {
-        console.log("handle")
-        setCardHover(false)
-       setTimeout (()=> {
-        setCardClicked(true)
-       },650)
+        if (isAvailable) {
+            setCardHover(false)
+            setTimeout (() => {
+                setCardClicked(true)
+            },590)
             
-       
+        }
     }
   
     return (
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} 
         className={"card-container " + `${!isAvailable && "no-available"} ${cardHover && isAvailable && "scale-card"}`}>
+        {cardClicked && <Modal title={title} price={price} cerrarModal={cerrarModal}></Modal>}
                 <img onClick={handleClickModal} src={img}></img>
                 <div className="title-type-star">
                     <div className="space-between">
@@ -49,7 +50,7 @@ const Card = ({ title, type, price, rating, isAvailable, onSale, img}) => {
                     <p>${price}</p>
                     <button type="button"><i className="fas fa-cart-plus"></i></button>
                 </div>
-                {cardClicked && <Modal title={title} price={price} cerrarModal={cerrarModal}></Modal>}
+                
         </div>
     )
 }

@@ -17,8 +17,10 @@ const Modal = ({title, price, cerrarModal}) => {
     return (
         <div className="modal-background">
             <div className="info-modal-container">
-                <button className="boton-cerrar" onClick={cerrarModal}>x</button>
-                <p>Cuantos {title} deseas agregar a tu carrito de compras</p>
+                <div className="otrodivmas">
+                    <p>Cuantos {title} deseas agregar a tu carrito de compras</p>
+                    <button className="boton-cerrar" onClick={cerrarModal}>x</button>
+                </div>
                 <div className="contenedor-cantidades">
                     <button onClick={botonMenosOnclick}>-</button>
                     <p>{cantidadDeArticulos}</p>
